@@ -1,5 +1,6 @@
 {
-  "name": "react-tailwind-app",
+  "homepage": "https://trantuanhiep.site",
+  "name": "hiep_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,8 +8,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
-    "react-scripts": "5.0.1",
-    "three": "^0.178.0"
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
