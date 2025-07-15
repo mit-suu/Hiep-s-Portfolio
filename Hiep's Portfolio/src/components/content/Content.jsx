@@ -9,7 +9,7 @@ function Content() {
         <Skill/>
        
       </section>
-       <p className="text-4xl  mt-20">This page is under development...</p>
+       <p className="text-4xl  mt-20">This page is under development....</p>
     </main>
   );
 }
