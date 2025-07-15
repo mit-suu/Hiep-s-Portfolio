@@ -7,7 +7,9 @@ function Content() {
       <section className="space-y-24">
        <About/>
         <Skill/>
+       
       </section>
+       <p className="text-4xl  mt-20">This page is under development...</p>
     </main>
   );
 }
