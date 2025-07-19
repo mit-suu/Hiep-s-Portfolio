@@ -21,12 +21,12 @@ const About = () => {
         , where I am honing my skills in front-end development. I’ve worked
         on various projects, including a{" "}
         <a
-          href="https://github.com/mit-suu/hotel-booking.git"
+          href="https://github.com/mit-suu/JobHunter.git"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[16.4px] text-blue-600 hover:text-blue-800 hover:underline"
         >
-          bookstore inventory management system
+          job management system
         </a>{" "}
         and a{" "}
         <a

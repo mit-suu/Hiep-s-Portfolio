@@ -1,15 +1,14 @@
 import Skill from "./Skills";
 import About from "./About";
-function Content() {
+import Project from "./Project";
+function Content({setIsHoveringProject }) {
   return (
-    <main className="ml-[576px] mt-[75px] mr-[120px] mb-[75px] py-2">
-      {/* ... đây là phần scrollable bình thường */}
+    <main className="pl-[576px] pt-[75px] pr-[120px] pb-[75px] py-2">
       <section className="space-y-24">
-       <About/>
-        <Skill/>
-       
-      </section>
-       <p className="text-4xl  mt-20">This page is under development....</p>
+      <About/>
+      <Skill/>
+      <Project setIsHoveringProject={setIsHoveringProject} />
+      </section> <p className="text-4xl  mt-20 font-semibold">This page is under development....</p>
     </main>
   );
 }

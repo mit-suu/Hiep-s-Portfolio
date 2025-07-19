@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import LoadingComponent from "./components/Loading";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Content from "./components/content/Content";
 export default function App() {
+   const [isHoveringProject, setIsHoveringProject] = useState(false);
   useEffect(() => {
     const handleMouseMove = (e) => {
       const x = `${e.clientX}px`;
@@ -21,19 +22,18 @@ export default function App() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white dark:bg-[#061222] font-poppins">
+    <main className="min-h-screen bg-gradient-to-br from-[#ffffff] via-[#f4f4f4] to-[#eaeaea] dark:bg-[#061222] font-poppins">
       <LoadingComponent />
-      <div>
-        {/* <div className="mouse-aura" /> */}
-        {/* góc trên-trái */}
-        <Header />
+         <div className="relative z-20">
+    <Header />
+    <Footer />
+    <Content setIsHoveringProject={setIsHoveringProject} />
+  </div>
 
-        {/* góc dưới-trái */}
-        <Footer />
+{isHoveringProject && (
+  <div className="fixed inset-0 bg-gradient-to-br from-purple-200/20 via-blue-200/10 to-transparent backdrop-blur-sm z-10 pointer-events-none transition-all duration-300"></div>
+)}
 
-        {/* 3. Nội dung chính bên phải */}
-        <Content />
-      </div>
     </main>
   );
 }
